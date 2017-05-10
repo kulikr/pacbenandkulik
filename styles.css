@@ -1,0 +1,488 @@
+/***********************   HEADER  **********************/
+header{
+    background-image:  url("pacman_gif.gif") ,url("background_1.jpg"),url("background_1.jpg") ;
+    background-size: contain;
+    background-position-x: 0%,35%,68%;
+    background-color: black;
+    background-repeat: no-repeat;
+    position:absolute;
+    width: 100%;
+    top:0px;
+    left:0px;
+    height: 10%;
+    border-style: solid;
+    border-color: black;
+    border: 0px;
+    margin: 0px;
+    padding-bottom: 15px;
+    z-index: 100;
+}
+
+#label_pacman{
+    position: absolute;
+    font-family: 'Love Ya Like A Sister', cursive;
+    color:yellow;
+    font-size: 40px;
+    letter-spacing: 8px;
+    left:42%;
+    top: 2%;
+}
+
+#label_user{
+    position: absolute;
+    left: 18%;
+    top:22%;
+    color: yellow;
+    font-family: 'Baloo', cursive;
+}
+
+#label_ben{
+    position: absolute;
+    right: 10.4%;
+    top:36%;
+    color: yellow;
+    font-family: 'Baloo', cursive;
+}
+
+#label_roy{
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    color: yellow;
+    font-family: 'Baloo', cursive;
+}
+
+/***********************   MENU  **********************/
+#div_menu{
+  width: 12%;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;  
+}
+
+.buttons_menu{
+    position: absolute;
+    font-size: 14px;
+    text-indent: 40%;
+    color:white;
+    font-family: 'Eagle Lake', cursive;
+    height: 50px;
+    width:100%;
+    left: 0;
+    border-radius: 10px;
+    background: transparent;
+    border:none;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 0%;
+}
+
+.buttons_menu:hover{
+    color: yellow;
+    cursor: pointer;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+#button_menuRegister{
+    background-image: url("red_monster.png");
+            top:30%; 
+}
+
+#button_menuLogin{
+    background-image: url("blue_monster.png");
+        top:55%;
+   
+}
+
+#button_menuPlay{
+    background-image: url("orange_monster.png");
+       top:5%; 
+}
+
+#button_menuAbout{
+    background-image: url("pink_monster.png");
+    top:80%;    
+}
+/***********************   VIEW_DIVS  **********************/
+
+#section_view{
+    position: absolute;
+    background-color:black;
+    top:11%;
+    height:83%;
+    width:100%;
+}
+
+.view{ 
+    position:absolute;
+    left: 14%;
+    height:100%;
+    width: 84%;
+    border-width: 10px;
+    border-radius: 10%;
+    background-image: url("pics/stars.gif");
+    background-size: cover;
+    /*background-image:url("bats_gif.gif"),url("bats_gif.gif"),url("bats_gif.gif"),url("bats_gif.gif");
+    background-repeat: no-repeat;
+    background-size: 90px 60px,80px 40px, 120px 80px, 160px 120px;
+    background-position: left top, left bottom, right top, right bottom;*/
+    }
+
+/************************  WELCOME DIV  ******************/
+#div_welcome{
+    background-image: url("pics/stars.gif");
+    background-position-y:  bottom;
+    background-position-x: 40% ;
+    background-repeat:no-repeat,no-repeat ;
+    background-size: initial,cover;
+    position:absolute;
+    right:0;
+}
+
+.buttons_welcome{
+    position: absolute;
+    font-size: 18px;
+    font-family: 'Eagle Lake', cursive;
+    height: 50px;
+    width:160px;
+    left: 36%;
+    border-radius: 10px;
+    background: transparent;
+    color:white;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.buttons_welcome:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+#button_register{
+    top:bottom;
+    top: 38%;
+}
+
+#button_login{
+    top:62%;
+}
+
+#label_welcome{
+    position: absolute;
+      font-family: 'Montserrat', sans-serif;
+  -webkit-text-stroke: 1px black;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000;
+    color:yellow;
+    font-size: 50px;
+    letter-spacing: 12px;
+    left:27%;
+    top: 10%;
+}
+
+/************************ WELCOME GAME DIV  ******************/
+#div_welcomeGame{
+    background-image: url("./pics/pacman_try.JPG");
+    background-size: cover, contain;
+    background-position: none, bottom left;
+}
+
+.settings{
+    display: inline-block;
+    margin:4%;
+    margin-top:6%;
+}
+
+.labels_welcomeGame{
+    display:block;
+    color:white;
+    font-family: 'Eagle Lake', cursive;
+    font-size:15px;
+}
+
+#button_startGame{
+    position: absolute;
+    font-size: 30px;
+    top: 35%;
+    left:32%;
+    color:white;
+    font-family: 'Eagle Lake', cursive;
+    height:40 px;
+    width: 250px;
+    border-radius: 10px;
+    border-width: 1px;
+    background-color: black;
+    border-color: white;
+    letter-spacing: 10px;
+    text-shadow: 10px;
+    
+}
+
+#button_startGame:hover{
+    color: yellow;
+    cursor: pointer;
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+/************************  GAME DIV  ******************/
+#div_game{
+    display: inline-block;
+    text-align: center;
+}
+
+#input_score{
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+color:yellow;
+-webkit-text-stroke: 1px black;
+}
+
+#input_time{
+font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+color:yellow;
+-webkit-text-stroke: 1px black;
+}
+
+.game_board_label{  
+	color: lightgrey;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	-webkit-text-stroke: 1px black;
+	text-shadow:
+	3px 3px 0 #000,
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px 1px 0 #000,
+	1px 1px 0 #000
+}
+
+#button_restart{
+    color:white;
+    width:100%;
+    height:100%;
+    background: transparent;
+    border:none;
+}
+
+#button_changeSettings{
+    position: absolute;
+left:1.3%;
+top:80%;
+}
+
+#button_logOut{
+    color:blue;
+    position: absolute;
+    background: transparent;
+    border: none;
+left:5%;
+top:90%;
+}
+
+#button_logOut:hover{
+    color: green;
+    cursor: pointer;
+}
+
+#button_restartBg{
+    margin:3.5%;
+    margin-top: 2.5%;
+    height: 80px;
+    width:80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("./pics/restart.png");
+}
+
+#button_restart:hover{
+    color: green;
+    cursor: pointer;
+}
+
+#game_board{
+    position:absolute;
+    left: 3%;
+    top: 25%;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    border-radius: 10px;
+	height: auto;
+	background-color: rgba(39,64,85,0.8);
+    padding: 10px;
+}
+
+#canvas{
+    position:absolute;
+    height: 360px;
+    width:740px; 
+    left:16%;
+    bottom: 4%;
+    background-color: black;
+}
+
+.no_lives{
+    height: 30px;
+}
+
+#game_pannel{
+    display: block;
+}
+
+/************************  REGISTER DIV  ******************/
+
+/***********************   FOOTER  **********************/
+footer{
+    display:block;
+    background-color: black;
+    position:absolute;
+    width: 100%;
+    bottom:0px;
+    left:0px;
+    height: 6%;
+}
+
+#label_contact{
+    position: absolute;
+    height: 100%;
+    left: 2%;
+    color: yellow;
+    font-family: 'Baloo', cursive;
+}
+/***********************   BODY  **********************/
+body{
+    margin: 0px;
+    padding:0px;
+    border: 0px;
+    overflow: hidden;
+}
+
+/***********************   ABOUT  **********************/
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 60%; /* Full width */
+    height: 40%; /* Full height */
+    overflow: none; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    border-style: solid;
+border-width: 3px;
+border-color: white;
+}
+
+
+.about_text{
+    font-family: 'Baloo', cursive;
+    color:gold;
+    font-size: 18px;
+}
+
+#label_about{
+    top:5%;
+    left:40%;
+    font-size:30px;
+    font-family: "Baloo", cursive;
+    position:absolute;
+    color:white;
+}
+
+#div_about{
+width:70%;
+height: 70%;
+background-size: cover;
+background-color: black;
+z-index:10000;
+top:20%;
+left:18%;
+}
+
+#div_gameover{
+width:50%;
+height: 40%;
+background-size: cover;
+background-color: black;
+z-index:10000;
+top:25%;
+left:22%;
+}
+
+.labels_gameover{
+      color: gold;
+  font-weight: 300;
+   font-family: 'Montserrat', sans-serif;
+  -webkit-text-stroke: 1px grey;
+    font-size: 32px;
+    margin:2%;
+    margin-left: 27%;
+    display:block;
+}
+
+#label_gameover1{
+    margin-top:8%;
+}
+
+#label_gameover2{
+   font-size: 26px;
+}
+
+
+#first_p{
+    margin-top: 10%;
+}
+
+.about_text{
+    position: relative;
+    margin: 4.5%;
+margin-top:5.5%;
+    display:block;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
